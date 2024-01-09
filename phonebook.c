@@ -53,7 +53,6 @@ bool check_file() {
 
 /* create table if does not exist. */
 bool check_db(sqlite3 *db, int rc) {
-  sqlite3_stmt *stmt;
   const char *sql = "CREATE TABLE IF NOT EXISTS phonebook ("
                     "ID INT PRIMARY KEY NOT NULL,"
                     "Name TEXT NOT NULL,"
